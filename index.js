@@ -4,6 +4,7 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+//FUNCTION CONTAINING THE QUESTIONS USER WILL ANSWER
 function promptUser() {
   return inquirer.prompt([
     {
@@ -60,10 +61,9 @@ function promptUser() {
   ]);
 }
 
-
+//FUNCTION THAT WILL SET UP THE README.MD DOCUMENT WITH THE USER'S INPUT ADDED THROUGHOUT
 function generateMarkdown(answers) {
-  return `
-  # ${answers.title}
+  return `# ${answers.title}
 
   ## TABLE OF CONTENTS
   -[DESCRIPTION](#DESCRIPTION)  
@@ -93,18 +93,19 @@ function generateMarkdown(answers) {
   ${answers.contribute}  
   I can be readed at ${answers.email} if you have any other questions about this repository.
   `;
-  
+
 }
 
+//CALLING THE PROMPT FUNCTION WHICH WILL LEAD TO THE GENERATE FUNCTION
 promptUser()
-  .then(function(answers) {
+  .then(function (answers) {
     const markdown = generateMarkdown(answers);
     return writeFileAsync("README.md", markdown)
   })
-  .then(function() {
+  .then(function () {
     console.log("Successfully wrote to README.md");
   })
-.catch(function(err) {
-  console.log(err);
-});
+  .catch(function (err) {
+    console.log(err);
+  });
 
