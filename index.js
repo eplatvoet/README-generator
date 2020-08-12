@@ -77,24 +77,31 @@ function promptUser() {
 function generateMarkdown(answers) {
   return `
   # ${answers.title}
-  ##TABLE OF CONTENTS
-  -DESCRIPTION
-  -LICENSE
-  -INSTALLATION
-  -TESTS
-  -QUESTIONS
+
+  ## TABLE OF CONTENTS
+  -[DESCRIPTION](# DESCRIPTION)  
+  -[LICENSE](# LICENSE)  
+  -INSTALLATION  
+  -TESTS  
+  -QUESTIONS  
   -CONTRIBUTIONS
-  ##DESCRIPTION
+
+  ## DESCRIPTION
   ${answers.description}
-  ##LICENSE
+
+  ## LICENSE
   ${answers.license}
-  ##INSTALLATION
+  
+  ## INSTALLATION
   ${answers.installation}
-  ##TESTING
+  
+  ## TESTING
   ${answers.tests}
-  ##QUESTIONS
+  
+  ## QUESTIONS
   ${answers.question}
-  ##CONTRIBUTION
+  
+  ## CONTRIBUTION
   ${answers.contribute}`;
 }
 
