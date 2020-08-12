@@ -1,28 +1,31 @@
 
-  # c
+  # README Generator
 
   ## TABLE OF CONTENTS
   -[DESCRIPTION](#DESCRIPTION)  
   -[LICENSE](#LICENSE)  
-  -[INSTALLATION](#INSTALLATION)
+  -[INSTALLATION](#INSTALLATION)  
   -[TESTS](#TESTS)  
   -[QUESTIONS](#QUESTIONS)  
-  -[CONTRIBUTIONS](#CONDITIONS)
+  -[CONTRIBUTIONS](#CONTRIBUTIONS)
 
   ## DESCRIPTION
-  d
+  Creating a README document based off user's input
 
   ## LICENSE
-  BSD
+  Public Domain (Unlicensed)
   
   ## INSTALLATION
-  e
+  install npm
   
   ## TESTING
-  f
+  install npm
   
   ## QUESTIONS
-  g
+  have npm packages  
+  My GitHub username is *eplatvoet* & my profile can be found [here](https://github.com/eplatvoet) 
   
-  ## CONTRIBUTION
-  h
+  ## CONTRIBUTIONS
+  hi  
+  I can be readed at erin.didomenico520@gmail.com if you have any other questions about this repository.
+  

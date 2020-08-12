@@ -1,28 +1,32 @@
+# README GENERATOR
+For this assignment, we were instructed to create a README generator. The user will answer a few questions, and once they've answered the final question, a README.md file will be created with their information added.
 
-  # testing
+## User Story
 
-  ## TABLE OF CONTENTS
-  -![jump to description section](##DESCRIPTION) DESCRIPTION
-  -LICENSE
-  -INSTALLATION
-  -TESTS
-  -QUESTIONS
-  -CONTRIBUTIONS
+```
+AS A developer
+I WANT a README generator
+SO THAT can quickly create a professional README for a new project
+```
 
-  ## DESCRIPTION
-  testing 123456789
+## TECHNOLOGIES USED:
+-node.js  
+-npm  
+-https://www.markdownguide.org/basic-syntax/  
 
-  ## LICENSE
-  NONE
-  
-  ## INSTALLATION
-  1234
-  
-  ## TESTING
-  1234
-  
-  ## QUESTIONS
-  nothing
-  
-  ## CONTRIBUTION
-  hi
+## LINKS
+https://github.com/eplatvoet/README-generator  
+https://eplatvoet.github.io/README-generator/  
+
+## SCREENSHOT
+![]()
+## Submission on BCS
+
+You are required to submit the following:
+
+* A walkthrough video demonstrating the functionality of the application. 
+
+* A sample README.md file for a project repository generated using your application.
+
+* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+

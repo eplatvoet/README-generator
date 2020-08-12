@@ -26,28 +26,15 @@ function promptUser() {
       name: "description",
       message: "Please write a short description of the project:"
     },
-    //   {
-    //     type: "checkbox",
-    //     message: "Check which areas will be a part of your README so a 'Table of Contents' can be generated.",
-    //     name: "tableOfContents",
-    //     choices: [
-    //       "Installation",
-    //       "Usage",
-    //       "License",
-    //       "Contributing",
-    //       "Tests",
-    //       "Questions"
-    //     ]
-    //   },
     {
-      type: "list",
+      type: "checkbox",
       message: "What type of licensing should this repo have?",
       name: "license",
       choices: [
-        "BSD",
-        "GPL",
-        "MIT",
-        "NONE"
+        "Apache License",
+        "GPL License",
+        "MIT License",
+        "Public Domain (Unlicensed)"
       ]
     },
     {
@@ -79,12 +66,12 @@ function generateMarkdown(answers) {
   # ${answers.title}
 
   ## TABLE OF CONTENTS
-  -[DESCRIPTION](# DESCRIPTION)  
-  -[LICENSE](# LICENSE)  
-  -INSTALLATION  
-  -TESTS  
-  -QUESTIONS  
-  -CONTRIBUTIONS
+  -[DESCRIPTION](#DESCRIPTION)  
+  -[LICENSE](#LICENSE)  
+  -[INSTALLATION](#INSTALLATION)  
+  -[TESTS](#TESTS)  
+  -[QUESTIONS](#QUESTIONS)  
+  -[CONTRIBUTIONS](#CONTRIBUTIONS)
 
   ## DESCRIPTION
   ${answers.description}
@@ -99,10 +86,14 @@ function generateMarkdown(answers) {
   ${answers.tests}
   
   ## QUESTIONS
-  ${answers.question}
+  ${answers.question}  
+  My GitHub username is *${answers.username}* & my profile can be found [here](https://github.com/${answers.username}) 
   
-  ## CONTRIBUTION
-  ${answers.contribute}`;
+  ## CONTRIBUTIONS
+  ${answers.contribute}  
+  I can be readed at ${answers.email} if you have any other questions about this repository.
+  `;
+  
 }
 
 promptUser()
