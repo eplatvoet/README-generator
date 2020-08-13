@@ -19,6 +19,6 @@ https://github.com/eplatvoet/README-generator
 https://eplatvoet.github.io/README-generator/  
 
 ## SCREENSHOT
-![SCREENGRAB](./READMEGeneratorScreengrab.gif)
+![SCREENGRAB](./READMEGenerator.gif)
 
 

@@ -32,9 +32,9 @@ function promptUser() {
       message: "What type of licensing should this repo have?",
       name: "license",
       choices: [
-        "Apache License",
-        "GPL License",
-        "MIT License",
+        "Apache",
+        "GPL",
+        "MIT",
         "None"
       ]
     },
@@ -65,15 +65,15 @@ function promptUser() {
 function generateMarkdown(answers) {
   return `
   # ${answers.title}  
-  ${answers.badge}
+  # ![Git Hub license](https://img.shields.io/badge/License-${answers.license}-blue.svg)
 
   ## TABLE OF CONTENTS
-  -[DESCRIPTION](#DESCRIPTION)  
-  -[LICENSE](#LICENSE)  
-  -[INSTALLATION](#INSTALLATION)  
-  -[TESTS](#TESTS)  
-  -[QUESTIONS](#QUESTIONS)  
-  -[CONTRIBUTIONS](#CONTRIBUTIONS)
+  - [DESCRIPTION](#DESCRIPTION)  
+  - [LICENSE](#LICENSE)  
+  - [INSTALLATION](#INSTALLATION)  
+  - [TESTS](#TESTS)  
+  - [QUESTIONS](#QUESTIONS)  
+  - [CONTRIBUTIONS](#CONTRIBUTIONS)
 
   ## DESCRIPTION
   ${answers.description}
@@ -103,18 +103,6 @@ promptUser()
 
 
   .then(function (answers) {
-    if (answers.license === "Apache License") {
-      answers.badge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-    }
-    if (answers.license === "GPL License") {
-      answers.badge = '[![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)'
-    }
-    if (answers.license === "MIT License") {
-      answers.badge = '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)'
-     }
-    if (answers.license === "None") {
-      answers.badge = {name: "Unlicensed"}
-    }
     const markdown = generateMarkdown(answers);
     return writeFileAsync("README.md", markdown)
   })
