@@ -35,7 +35,7 @@ function promptUser() {
         "Apache License",
         "GPL License",
         "MIT License",
-        "Public Domain (Unlicensed)"
+        "None"
       ]
     },
     {
@@ -63,7 +63,9 @@ function promptUser() {
 
 //FUNCTION THAT WILL SET UP THE README.MD DOCUMENT WITH THE USER'S INPUT ADDED THROUGHOUT
 function generateMarkdown(answers) {
-  return `# ${answers.title}
+  return `
+  # ${answers.title}  
+  ${answers.badge}
 
   ## TABLE OF CONTENTS
   -[DESCRIPTION](#DESCRIPTION)  
@@ -98,7 +100,21 @@ function generateMarkdown(answers) {
 
 //CALLING THE PROMPT FUNCTION WHICH WILL LEAD TO THE GENERATE FUNCTION
 promptUser()
+
+
   .then(function (answers) {
+    if (answers.license === "Apache License") {
+      answers.badge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    }
+    if (answers.license === "GPL License") {
+      answers.badge = '[![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)'
+    }
+    if (answers.license === "MIT License") {
+      answers.badge = '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)'
+     }
+    if (answers.license === "None") {
+      answers.badge = {name: "Unlicensed"}
+    }
     const markdown = generateMarkdown(answers);
     return writeFileAsync("README.md", markdown)
   })

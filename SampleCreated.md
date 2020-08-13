@@ -1,4 +1,6 @@
-# README generator
+
+  # Title goes here ...  
+
 
   ## TABLE OF CONTENTS
   -[DESCRIPTION](#DESCRIPTION)  
@@ -9,22 +11,22 @@
   -[CONTRIBUTIONS](#CONTRIBUTIONS)
 
   ## DESCRIPTION
-  User will be presented a serious of questions and their responses will be added to the README document that is generated after the final question.
+  Description goes here...
 
   ## LICENSE
-  Public Domain (Unlicensed)
+  None
   
   ## INSTALLATION
-  npm init, npm install
+  Install info goes here ..
   
   ## TESTING
-  n/a
+  testing info goes here ...
   
   ## QUESTIONS
-  n/a  
+  Need to know info goes here ...  
   My GitHub username is *eplatvoet* & my profile can be found [here](https://github.com/eplatvoet) 
   
   ## CONTRIBUTIONS
-  n/a  
+  Contribution info goes here...  
   I can be readed at erin.didomenico520@gmail.com if you have any other questions about this repository.
   
