@@ -28,5 +28,5 @@
   
   ## CONTRIBUTIONS
   Contribution info goes here. ..  
-  I can be readed at erin.didomenico520@gmail.com if you have any other questions about this repository.
+  I can be reached at erin.didomenico520@gmail.com if you have any other questions about this repository.
   
