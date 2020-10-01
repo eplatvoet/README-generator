@@ -93,7 +93,7 @@ function generateMarkdown(answers) {
   
   ## CONTRIBUTIONS
   ${answers.contribute}  
-  I can be readed at ${answers.email} if you have any other questions about this repository.
+  I can be reached at ${answers.email} if you have any other questions about this repository.
   `;
 
 }
